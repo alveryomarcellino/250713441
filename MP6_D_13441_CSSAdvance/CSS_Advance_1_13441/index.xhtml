@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="id" lang="id">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    <title>Formulir Pendaftaran Lomba IT Atma Jaya</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+<body>
+    <div class="container">
+        <div class="header-banner">
+            <h1>Formulir Pendaftaran Lomba IT</h1>
+            <p class="subtitle">Lengkapi formulir di bawah ini dengan data tim yang valid untuk mendaftar.</p>
+        </div>
+        
+        <form action="" method="post" enctype="multipart/form-data">
+            <div class="form-section">
+                <label for="namatim"><strong>Nama Tim</strong></label>
+                <input type="text" id="namatim" name="namatim" size="30" placeholder="Masukkan nama tim Anda" />
+            </div>
+
+            <div class="form-section">
+                <label for="ketua"><strong>Nama Ketua Tim</strong></label>
+                <input type="text" id="ketua" name="ketua" size="30" placeholder="Masukkan nama lengkap ketua" />
+            </div>
+
+            <div class="form-section">
+                <label for="jumlah"><strong>Jumlah Anggota</strong></label>
+                <select id="jumlah" name="jumlah">
+                    <option value="">-- Pilih Jumlah Anggota --</option>
+                    <option>1 Orang</option>
+                    <option>2 Orang</option>
+                    <option>3 Orang</option>
+                    <option>4 Orang</option>
+                    <option>5 Orang</option>
+                </select>
+            </div>
+
+            <div class="form-section">
+                <label for="telepon"><strong>Nomor Telepon (Kontak Utama)</strong></label>
+                <input type="text" id="telepon" name="telepon" size="30" placeholder="Contoh: 081234567890" />
+            </div>
+
+            <div class="form-section">
+                <label for="universitas"><strong>Asal Perguruan Tinggi</strong></label>
+                <input type="text" id="universitas" name="universitas" size="30" placeholder="Contoh: Universitas Atma Jaya Yogyakarta" />
+            </div>
+
+            <div class="form-section">
+                <strong>Kategori Bidang Lomba</strong>
+                <div class="checkbox-group">
+                    <label><input type="checkbox" id="coding" name="bidang" value="Coding" /> Pemrograman / Coding</label>
+                    <label><input type="checkbox" id="desain" name="bidang" value="Desain" /> Desain UI/UX</label>
+                    <label><input type="checkbox" id="video" name="bidang" value="Video" /> Pembuatan Video Kreatif</label>
+                    <label><input type="checkbox" id="essay" name="bidang" value="Essay" /> Penulisan Esai Ilmiah</label>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <strong>Status Kepesertaan</strong>
+                <div class="radio-group">
+                    <label><input type="radio" id="mahasiswa" name="peserta" value="Mahasiswa" /> Mahasiswa Aktif</label>
+                    <label><input type="radio" id="umum" name="peserta" value="Umum" /> Masyarakat Umum</label>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <label for="deskripsi"><strong>Deskripsi Singkat Karya</strong></label>
+                <textarea id="deskripsi" name="deskripsi" rows="4" placeholder="Jelaskan ringkasan karya yang Anda daftarkan..."></textarea>
+            </div>
+
+            <div class="form-section">
+                <label for="alasan"><strong>Motivasi Mengikuti Kompetisi</strong></label>
+                <textarea id="alasan" name="alasan" rows="4" placeholder="Tuliskan alasan dan harapan tim mengikuti lomba ini..."></textarea>
+            </div>
+
+            <div class="form-section">
+                <label for="filekarya"><strong>Unggah Berkas Karya</strong></label>
+                <input type="file" id="filekarya" name="filekarya" />
+            </div>
+
+            <div class="text-center">
+                <input type="submit" name="daftar" value="Kirim Pendaftaran Lomba" class="btn-submit" />
+            </div>
+        </form>
+    </div>
+</body>
+</html>
