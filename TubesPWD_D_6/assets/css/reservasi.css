@@ -1,0 +1,226 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EAEAEA;
+    color: #2B2B2B;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+h2,
+p,
+.tabel-bungkus {
+    max-width: 1140px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin-top: 24px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #5B381E;
+    margin-bottom: 8px;
+}
+
+.kecil {
+    font-size: 13px;
+    color: #7A746E;
+}
+
+p.kecil {
+    margin-bottom: 18px;
+}
+
+p:not(.kecil) {
+    background-color: #FFFFFF;
+    padding: 36px 24px;
+    border-radius: 16px;
+    border: 1px solid #E5DFD7;
+    text-align: center;
+    font-size: 15px;
+    color: #5C5854;
+    margin-top: 16px;
+}
+
+p:not(.kecil) a {
+    color: #5B381E;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+.tabel-bungkus {
+    background-color: #FFFFFF;
+    border-radius: 18px;
+    border: 1px solid #E5DFD7;
+    box-shadow: 0 8px 24px rgba(91, 56, 30, 0.06);
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 820px;
+}
+
+table th {
+    background-color: #FAF8F5;
+    color: #5B381E;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    padding: 16px 18px;
+    border-bottom: 2px solid #E5DFD7;
+    white-space: nowrap;
+}
+
+table td {
+    padding: 16px 18px;
+    font-size: 14px;
+    color: #2B2B2B;
+    border-bottom: 1px solid #EFECE6;
+    vertical-align: top;
+}
+
+table tr:last-child td {
+    border-bottom: none;
+}
+
+table tr:hover td {
+    background-color: #FCFBF9;
+}
+
+table td:first-child strong {
+    display: inline-block;
+    font-size: 14px;
+    color: #5B381E;
+    letter-spacing: 0.4px;
+    margin-bottom: 8px;
+}
+
+/* Kolom Total Harga */
+table td:nth-child(4) {
+    font-weight: 700;
+    color: #5B381E;
+    white-space: nowrap;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 4px;
+    background-color: #EFE7DF;
+    color: #5B381E;
+}
+
+.status-menunggu {
+    background-color: #FEF5E7;
+    color: #9A6314;
+    border: 1px solid #F5D9A8;
+}
+
+.status-dikonfirmasi,
+.status-selesai {
+    background-color: #EDF7F0;
+    color: #246838;
+    border: 1px solid #BCE2C7;
+}
+
+.status-dibatalkan,
+.status-ditolak {
+    background-color: #FDF2F0;
+    color: #9E3323;
+    border: 1px solid #F3C6BE;
+}
+
+.bintang {
+    display: inline-block;
+    color: #D48817;
+    font-size: 14px;
+    letter-spacing: 1px;
+    margin-top: 4px;
+}
+
+form.inline {
+    display: inline-block;
+}
+
+.tombol,
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5B381E;
+    color: #FFFFFF;
+    border: 1px solid #5B381E;
+    border-radius: 18px;
+    cursor: pointer;
+    text-decoration: none;
+    font: inherit;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.tombol:hover,
+button:hover {
+    background-color: #432814;
+    border-color: #432814;
+}
+
+.tombol-kecil {
+    padding: 6px 14px;
+    font-size: 12px;
+    margin: 2px 4px 2px 0;
+}
+
+.tombol-garis {
+    background-color: #FFFFFF;
+    border: 1px solid #B8B0A6;
+    color: #5C5854;
+}
+
+.tombol-garis:hover {
+    background-color: #FAF8F5;
+    border-color: #5B381E;
+    color: #5B381E;
+}
+
+.tombol-bahaya {
+    background-color: #FDF2F0;
+    border: 1px solid #E6B5AD;
+    color: #9E3323;
+}
+
+.tombol-bahaya:hover {
+    background-color: #9E3323;
+    border-color: #9E3323;
+    color: #FFFFFF;
+}
+
+.pesan {
+    padding: 11px 14px;
+    border-radius: 10px;
+    font-size: 13px;
+    margin-bottom: 14px;
+}
+
+.pesan-error {
+    background-color: #FDF2F0;
+    color: #9E3323;
+    border: 1px solid #F3C6BE;
+}
+
+.pesan-sukses {
+    background-color: #F1F7F2;
+    color: #276336;
+    border: 1px solid #C6E0CC;
+}
