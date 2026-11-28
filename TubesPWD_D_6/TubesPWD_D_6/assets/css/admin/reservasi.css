@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #EAEAEA;
+    color: #2B2B2B;
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+h2,
+p,
+.form-cari,
+.tabel-bungkus {
+    max-width: 1220px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h2 {
+    margin-top: 20px;
+    font-size: 26px;
+    font-weight: 700;
+    color: #5B381E;
+    margin-bottom: 18px;
+}
+
+.kecil {
+    font-size: 12.5px;
+    color: #7A746E;
+}
+
+.form-cari {
+    display: flex;
+    align-items: flex-end;
+    gap: 12px;
+}
+
+.form-cari div {
+   width: 300px;
+}
+
+.form-cari label {
+    display: block;
+    font-size: 12px;
+    font-weight: 600;
+    color: #5C5854;
+    margin-bottom: 6px;
+}
+
+.form-cari input[type="text"] {
+    width: 100%;
+    height: 42px;
+    padding: 0 15px;
+    background-color: #F3F1EE;
+    border: 1px solid #E2DDD7;
+    border-radius: 11px;
+    font-size: 14px;
+    color: #2B2B2B;
+    outline: none;
+}
+
+.form-cari button {
+    height: 42px;
+    padding: 0 24px;
+}
+
+p {
+    background-color: #FFFFFF;
+    padding: 32px 20px;
+    border-radius: 16px;
+    border: 1px solid #E5DFD7;
+    text-align: center;
+    font-size: 15px;
+    color: #7A746E;
+}
+
+.tabel-bungkus {
+    background-color: #FFFFFF;
+    border-radius: 18px;
+    border: 1px solid #E5DFD7;
+    box-shadow: 0 8px 24px rgba(91, 56, 30, 0.06);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    min-width: 1040px;
+}
+
+table th {
+    border-radius: 18px;
+    background-color: #FAF8F5;
+    color: #5B381E;
+    font-size: 13px;
+    font-weight: 700;
+    text-align: left;
+    padding: 15px 16px;
+    border-bottom: 2px solid #E5DFD7;
+    white-space: nowrap;
+}
+
+table td {
+    padding: 15px 16px;
+    font-size: 13.5px;
+    color: #2B2B2B;
+    border-bottom: 1px solid #EFECE6;
+    vertical-align: top;
+}
+
+.status {
+    display: inline-block;
+    padding: 4px 12px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: 600;
+    background-color: #EFE7DF;
+    color: #5B381E;
+    white-space: nowrap;
+}
+
+.status-menunggu {
+    background-color: #FEF5E7;
+    color: #9A6314;
+    border: 1px solid #F5D9A8;
+}
+
+.status-dikonfirmasi,
+.status-selesai {
+    background-color: #EDF7F0;
+    color: #246838;
+    border: 1px solid #BCE2C7;
+}
+
+.status-dibatalkan,
+.status-ditolak {
+    background-color: #FDF2F0;
+    color: #9E3323;
+    border: 1px solid #F3C6BE;
+}
+
+
+form.inline {
+    display: inline-flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 6px;
+    margin: 2px 4px 4px 0;
+}
+
+
+form.inline input[type="text"] {
+    height: 30px;
+    padding: 0 10px;
+    background-color: #F3F1EE;
+    border: 1px solid #D8D1C7;
+    border-radius: 10px;
+    font: inherit;
+    font-size: 12px;
+    color: #2B2B2B;
+    outline: none;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+form.inline input[type="text"]:focus {
+    background-color: #FFFFFF;
+    border-color: #9E3323;
+}
+
+.tombol,
+button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #5B381E;
+    color: #FFFFFF;
+    border: 1px solid #5B381E;
+    border-radius: 20px;
+    cursor: pointer;
+    text-decoration: none;
+    font: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.2s ease;
+    white-space: nowrap;
+}
+
+.tombol:hover,
+button:hover {
+    background-color: #432814;
+    border-color: #432814;
+}
+
+.tombol-kecil {
+    height: 30px;
+    padding: 0 13px;
+    font-size: 12px;
+    margin: 2px 4px 4px 0;
+}
+
+form.inline .tombol-kecil {
+    margin: 0;
+}
+
+.tombol-garis {
+    background-color: #FFFFFF;
+    border: 1px solid #B8B0A6;
+    color: #5C5854;
+}
+
+.tombol-garis:hover {
+    background-color: #FAF8F5;
+    border-color: #5B381E;
+    color: #5B381E;
+}
+
+.tombol-bahaya {
+    background-color: #FDF2F0;
+    border: 1px solid #E6B5AD;
+    color: #9E3323;
+}
+
+.tombol-bahaya:hover {
+    background-color: #9E3323;
+    border-color: #9E3323;
+    color: #FFFFFF;
+}
